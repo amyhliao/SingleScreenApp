@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:text="Header" />
+        android:gravity="center"
+        android:text="Portland Dog Sightings" />
 
     <ImageView
         android:src="@drawable/paige"
@@ -24,8 +25,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-light"
-        android:textColor="@android:color/black"
         android:text="Cute dog of Slabtown" />
 
     <RelativeLayout
@@ -34,14 +36,18 @@
         android:layout_weight="0.5">
 
         <ImageView
+            android:id="@+id/pin_image_view"
             android:src="@drawable/location_pin"
             android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123 Main Street, Portland, OR 97209"/>
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pin_image_view"
+            android:text="123 Main Street, Portland, OR 97209" />
 
     </RelativeLayout>
 
@@ -51,16 +57,33 @@
         android:layout_weight="0.5">
 
         <ImageView
-            android:src="@drawable/location_pin"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:id="@+id/breed_image_view"
+            android:src="@drawable/paw_print"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123 Main Street, Portland, OR 97209"/>
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/breed_image_view"
+            android:text="Siberian Husky" />
 
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Description" />
 
     <TextView
         android:layout_width="match_parent"
@@ -69,8 +92,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:textSize="20sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@android:color/black"
-        android:text="Long, long textttttttttttttttttttttt" />
+        android:text="Long, long textttttttttttttttttttttt and some more text and so on and so on" />
 
 </LinearLayout>
